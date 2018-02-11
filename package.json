@@ -1,0 +1,20 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "website for school",
+  "main": "entry.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ashutosh.udeniya",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "install": "^0.10.4",
+    "npm": "^5.6.0",
+    "webpack": "^3.11.0"
+  }
+}
