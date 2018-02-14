@@ -4,7 +4,9 @@
   "description": "website for school",
   "main": "entry.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "webpack",
+    "start": "webpack-dev-server" 
   },
   "author": "ashutosh.udeniya",
   "license": "ISC",
