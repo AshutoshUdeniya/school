@@ -10,7 +10,7 @@ var HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
 
 });
 
-module.export = {
+module.exports = {
 
     entry: __dirname + '/src/entry.js',
 
