@@ -1,5 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Heading from './components/Heading.js';
 
-
-render(<p>it's my entry point</p>, document.getElementById('root'));
+const Entry = () => {
+    return(
+        <div>
+            <Heading/>
+            changed structure
+        </div>
+    );
+};
+render(<Entry/>, document.getElementById('root'));
