@@ -1,4 +1,5 @@
-var HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
 
@@ -8,6 +9,10 @@ var HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
 
     inject: 'body' // newly generated script will be placed in <body> tag
 
+});
+
+var ExtractTextPluginConfig = new ExtractTextPlugin({
+    filename: 'css/style.css'
 });
 
 module.exports = {
@@ -21,6 +26,11 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
+            },
+            {
+                test: /\.(css|sass|scss)$/,
+                exclude: /node_modules/,
+                loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']) 
             }
         ]
     },

@@ -1,12 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Heading from './components/Heading.js';
-
+import Home from './containers/Home.js';
 const Entry = () => {
     return(
         <div>
-            <Heading/>
-            changed structure
+            <Home/>
         </div>
     );
 };
